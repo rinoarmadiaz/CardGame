@@ -28,9 +28,6 @@ run `yarn test`
 ### Architecture
 - React Hooks
 
-### Complexity
-- Beginner
-
 # Application Preview
 ![Alt Text](https://media.giphy.com/media/vvThQBkRpWYfvi0CWU/giphy.gif)
 
