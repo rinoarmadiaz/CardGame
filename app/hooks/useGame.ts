@@ -46,11 +46,8 @@ const useGame = () => {
         firstSelectedCard.current !== undefined &&
         firstSelectedCard.current !== number
       ) {
-        console.log('selected number', number);
         setCardList(newList);
-        console.log('newlist not mathced', newList);
         setTimeout(() => {
-          console.log('reset card!!');
           const listlist = newList.map(item => ({
             ...item,
             state:
@@ -65,11 +62,7 @@ const useGame = () => {
         }, 2000);
         setIsCardSelected(true);
       } else {
-        console.log('first', firstSelectedCard.current);
-        console.log('number', number);
         if (firstSelectedCard.current === number) {
-          // MATCHED!
-          console.log('matche!');
           firstSelectedCard.current = undefined;
         } else {
           firstSelectedCard.current = number;
